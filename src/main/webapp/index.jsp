@@ -1,7 +1,7 @@
 ```json
 {
   "project_name": "Sravan DevOps Web Hosting",
-  "owner": "Sravan Kumar  ",
+  "owner": "Madatha Sravan Kumar  ",
   "server": "Apache Tomcat",
   "cloud_platform": "AWS EC2",
   "deployment_status": "SUCCESS",
