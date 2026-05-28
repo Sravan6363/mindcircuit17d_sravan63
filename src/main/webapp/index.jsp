@@ -7,69 +7,90 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sravan DevOps WebApp</title>
+    <title>Sravan Cloud Project</title>
 
     <style>
 
-        body {
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
 
-            margin: 0;
-            padding: 0;
+        body{
+
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(135deg,#00c6ff,#0072ff);
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #1d2671, #c33764);
-            color: white;
-            text-align: center;
+            overflow:hidden;
         }
 
-        .container {
+        .card{
 
-            margin-top: 120px;
+            width:700px;
+            padding:40px;
+            text-align:center;
+            background:white;
+            border-radius:20px;
+            box-shadow:0px 10px 30px rgba(0,0,0,0.3);
+
+            animation: float 3s ease-in-out infinite;
         }
 
-        h1 {
+        @keyframes float{
 
-            font-size: 50px;
-            color: yellow;
+            0%{
+                transform:translateY(0px);
+            }
+
+            50%{
+                transform:translateY(-10px);
+            }
+
+            100%{
+                transform:translateY(0px);
+            }
         }
 
-        h2 {
+        h1{
 
-            color: cyan;
+            color:#0072ff;
+            font-size:50px;
+            margin-bottom:20px;
         }
 
-        .box {
+        h2{
 
-            width: 70%;
-            margin: auto;
-            padding: 30px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 15px;
-            box-shadow: 0px 0px 20px black;
+            color:#333;
+            margin-bottom:20px;
         }
 
-        .btn {
+        p{
 
-            margin-top: 20px;
-            padding: 12px 25px;
-            background-color: orange;
-            border: none;
-            border-radius: 10px;
-            font-size: 18px;
-            cursor: pointer;
-            color: black;
-            font-weight: bold;
+            color:#555;
+            font-size:20px;
+            line-height:1.6;
         }
 
-        .btn:hover {
+        .status{
 
-            background-color: lime;
-            transform: scale(1.05);
+            margin-top:30px;
+            padding:15px;
+            background:#28a745;
+            color:white;
+            border-radius:10px;
+            font-size:22px;
+            font-weight:bold;
         }
 
-        .footer {
+        .footer{
 
-            margin-top: 40px;
-            color: lightgray;
+            margin-top:30px;
+            color:#777;
+            font-size:18px;
         }
 
     </style>
@@ -78,39 +99,31 @@
 
 <body>
 
-    <div class="container">
+    <div class="card">
 
-        <div class="box">
+        <h1>☁️ AWS DevOps Project</h1>
 
-            <h1>🚀 Welcome Sravan Kumar</h1>
+        <h2>Apache Tomcat Deployment</h2>
 
-            <h2>DevOps + AWS + Tomcat Practice Application</h2>
+        <p>
 
-            <p>
+            Congratulations 🎉<br><br>
 
-                This application is successfully deployed on
+            Your Java Web Application is successfully hosted on
 
-                Apache Tomcat Web Server.
+            Apache Tomcat Server running inside AWS EC2.
 
-            </p>
+        </p>
 
-            <p>
+        <div class="status">
 
-                Frontend Deployment Testing Page
-
-            </p>
-
-            <button class="btn">
-
-                Deployment Successful ✅
-
-            </button>
+            ✅ Deployment Successful
 
         </div>
 
         <div class="footer">
 
-            <h3>Powered by AWS EC2 + Apache Tomcat</h3>
+            Sravan Kumar | DevOps Engineer Practice Project
 
         </div>
 
